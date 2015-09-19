@@ -109,7 +109,7 @@ pusher.get(
 {
   "time_ms": 1327078148132,
   "events": [
-    { "name": "eventName", ... }
+    { "name": "eventName", }
   ]
 }
 ```
@@ -140,14 +140,14 @@ pusher.get(
 }
 ```
 
-```json
+```js
 {
   "name": "client_event",
   "channel": "name of the channel the event was published on",
   "event": "name of the event",
   "data": "data associated with the event",
   "socket_id": "socket_id of the sending socket",
-  "user_id": "user_id associated with the sending socket" # Only for presence channels
+  "user_id": "user_id associated with the sending socket" // Only for presence channels
 }
 ```
 
